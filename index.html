@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/global.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/particles.css">
+
+        <title>Syaiful Hadi | Portfolio</title>
+    </head>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <div id="particles-js"></div>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            
+                            <img src="assets/img/saya.png" alt="" style="width: 100%">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Syaiful Hadi</h2>
+                    <h3 class="profile__profession">System Administrator</h3>
+
+<!--                     <ul class="profile__social">
+                        <a href="https://www.youtube.com/syaifulhd90" target="_blank" class="profile__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                        <a href="https://github.com/syaifulhd90" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul> -->
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">3</h3>
+                        <p class="profile__info-description">
+                            Years of <br> work
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">5</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">6</h3>
+                        <p class="profile__info-description">Certificate</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a target="_blank" href="https://t.me/indoituser" class="button" style="opacity: 90%;">
+                        Troubleshoting<i class="ri-link"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        
+                            <a href="https://api.whatsapp.com/send?phone=+6281217357545&text=bisa berikan saya informasi tentang anda " target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <a href="mailto:syaifulhd90@gmail.com" target="_blank" class="button button__small button__gray">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                    <button class="filters__button" data-target="#serti">
+                        Certificate
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== serti ===============-->
+                    <div class="projects__content grid" data-content id="serti">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/Syaiful Hadi -  LKS Wilker.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <h3 class="projects__title">LKS Wilker</h3>
+                                    <a href="assets/img/Syaiful Hadi -  LKS Wilker.jpg" class="projects__button button button__small" target="_blank">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/Syaiful Hadi - KKNI.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <h3 class="projects__title">KKNI</h3>
+                                    <a href="assets/img/Syaiful Hadi - KKNI.jpg" class="projects__button button button__small" target="_blank">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/Syaiful Hadi - Olimpiade Jaringan Mikrotik.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <h3 class="projects__title">Olimpiade Jaringan Mikroti</h3>
+                                    <a href="assets/img/Syaiful Hadi - Olimpiade Jaringan Mikrotik.jpg" class="projects__button button button__small" target="_blank">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="projects__card">
+                            <img src="assets/img/ebilling.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <h3 class="projects__title">ebilling</h3>
+                                    <a href="assets/img/ebilling.png" class="projects__button button button__small" target="_blank">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                    </div>
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/mikbotam.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Mikbotam</span>
+                                    <h3 class="projects__title">Mikbotam V4 installation</h3>
+                                    <a href="https://voucher.simtel.net.id/admin/login.php" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/grafana.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Grafana</span>
+                                    <h3 class="projects__title">Promethius CPU Monitoring Linux</h3>
+                                    <a href="https://github.com/vaibhavtomar04/InteriorDesignsWebsite" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/rpz-kominfo.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">DNS Server</span>
+                                    <h3 class="projects__title">Rpz DNS Server Kominfo</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/prtg.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PRTG Server</span>
+                                    <h3 class="projects__title">Monitoring internet traffic</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/dude.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">The Dude</span>
+                                    <h3 class="projects__title">Monitoring The Dude network</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="projects__card">
+                            <img src="assets/img/data-simtel.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Rekap Material Teknisi</span>
+                                    <h3 class="projects__title">Merekap Kebutuhan Material/Alat Teknisi</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">System Linux & Windows</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Linux Server Installation</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">RPZ Kominfo DNS Server Configuration</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Instalasi windows server 2012 R/2016/2019/2024 </h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Mikbotam V4 installation</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">PRTG Server Monitoring Installation</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">ZTE Netnumen Installation</h3>
+                                            <span class="skills__level">Medium</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Web Server Installation</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- 
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                       <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                        <div class="skills__area" >
+                            <h3 class="skills__title">Networking</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Instalasi Mikrotik x86</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Basic Mikrotik Configuration</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Network Problem Solving</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">fiber optic cable splacing</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Mikrotik LHG RADIO Configuration</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Ubiquity RADIO configuration</h3>
+                                            <span class="skills__level">Medium</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">The Dude Monitoring Configuration</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">HSGQ & HIOSO OLT Configuration</h3>
+                                            <span class="skills__level">Medium</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__area">
+                            <h3 class="skills__title">Programming</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Html, Css3, Flexbox, JavaScript</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+                                    
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Php, Mysql, Python</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+
+                                    <!---
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Syaiful Hadi. All rigths reserved
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/particles.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
